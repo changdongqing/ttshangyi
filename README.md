@@ -47,7 +47,7 @@ Yi框架-一套与SqlSugar一样爽的.Net8开源框架。
 - TTShang.Doc.Md: 开源文档教程
 - TTShang.Vben5.Vue3：Vben ts后台前端
 - TTShang.Pure.Vue3：Pure ts后台前端
-- TTShang.RuoTTShang.Vue3：RuoYi js后台前端
+- TTShang.RuoYi.Vue3：RuoYi js后台前端
 
 
 ****

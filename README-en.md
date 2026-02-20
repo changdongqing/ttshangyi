@@ -32,7 +32,7 @@ A Comprehensive Solution, Ultimately Just Another Wheel.
 - TTShang.Bbs.Vue3：Bbs Community - Frontend
 - TTShang.Doc.Md: Open Source Documentation Tutorial
 - TTShang.Pure.Vue3：Pure TS Backend Frontend
-- TTShang.RuoTTShang.Vue3：RuoYi JS Backend Frontend
+- TTShang.RuoYi.Vue3：RuoYi JS Backend Frontend
 
 ****
 ## 🍉 docker 

@@ -8,4 +8,4 @@ EXPOSE 19001
 FROM base AS final
 WORKDIR /app
 COPY ["./publish","."]
-ENTRYPOINT ["dotnet", "Yi.Abp.Web.dll"]
+ENTRYPOINT ["dotnet", "TTShang.Abp.Web.dll"]

@@ -9,14 +9,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /main
 COPY . .
-WORKDIR "/main/src/Yi.Abp.Web"
-RUN dotnet restore "Yi.Abp.Web.csproj"
+WORKDIR "/main/src/TTShang.Abp.Web"
+RUN dotnet restore "TTShang.Abp.Web.csproj"
 
 FROM build AS publish
-WORKDIR "/main/src/Yi.Abp.Web"
-RUN dotnet publish "Yi.Abp.Web.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+WORKDIR "/main/src/TTShang.Abp.Web"
+RUN dotnet publish "TTShang.Abp.Web.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Yi.Abp.Web.dll"]
+ENTRYPOINT ["dotnet", "TTShang.Abp.Web.dll"]
