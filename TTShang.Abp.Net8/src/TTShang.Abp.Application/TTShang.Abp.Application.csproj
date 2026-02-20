@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\framework\TTShang.Framework.Ddd.Application\TTShang.Framework.Ddd.Application.csproj" />
+    <ProjectReference Include="..\..\module\rbac\TTShang.Framework.Rbac.Application\TTShang.Framework.Rbac.Application.csproj" />
+    <ProjectReference Include="..\..\module\setting-management\TTShang.Framework.SettingManagement.Application\TTShang.Framework.SettingManagement.Application.csproj" />
+    <ProjectReference Include="..\..\module\tenant-management\TTShang.Framework.TenantManagement.Application\TTShang.Framework.TenantManagement.Application.csproj" />
+    <ProjectReference Include="..\TTShang.Abp.Application.Contracts\TTShang.Abp.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TTShang.Abp.Domain\TTShang.Abp.Domain.csproj" />
+  </ItemGroup>
+	
+
+</Project>
