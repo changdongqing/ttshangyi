@@ -35,6 +35,10 @@ namespace TTShang.Framework.SqlSugarCore.Repositories
         /// </summary>
         public bool? IsChangeTrackingEnabled => false;
 
+        public string? EntityName { get; set; }
+
+        public string? ProviderName => "SqlSugar";
+
         public SqlSugarRepository(ISugarDbContextProvider<ISqlSugarDbContext> dbContextProvider)
         {
             _dbContextProvider = dbContextProvider;
