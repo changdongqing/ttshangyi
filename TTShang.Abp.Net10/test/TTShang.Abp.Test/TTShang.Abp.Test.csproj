@@ -21,17 +21,17 @@
   <ItemGroup>
 	  <PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
 
-	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
-	  <PackageReference Include="NSubstitute" Version="5.1.0" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+	  <PackageReference Include="NSubstitute" Version="5.3.0" />
 	  <PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.17">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 	  </PackageReference>
-	  <PackageReference Include="Shouldly" Version="4.2.1" />
+	  <PackageReference Include="Shouldly" Version="4.3.0" />
 	  <PackageReference Include="Volo.Abp.TestBase" Version="$(AbpVersion)" />
-	  <PackageReference Include="xunit" Version="2.7.0" />
-	  <PackageReference Include="xunit.extensibility.execution" Version="2.7.0" />
-	  <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
+	  <PackageReference Include="xunit" Version="2.9.3" />
+	  <PackageReference Include="xunit.extensibility.execution" Version="2.9.3" />
+	  <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
@@ -40,9 +40,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\TTShang.Abp.Application\TTShang.Abp.Application.csproj" />
     <ProjectReference Include="..\..\src\TTShang.Abp.SqlSugarCore\TTShang.Abp.SqlSugarCore.csproj" />
-      <PackageReference Include="Hangfire.MemoryStorage" Version="1.8.1.1" />
-      <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.9.4" />
-      <PackageReference Include="Hangfire.Core" Version="1.8.21" />
+      <PackageReference Include="Hangfire.MemoryStorage" Version="1.8.1.2" />
+      <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.12.0" />
+      <PackageReference Include="Hangfire.Core" Version="1.8.23" />
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
 	  <PackageReference Include="Volo.Abp.Caching" Version="$(AbpVersion)" />
   </ItemGroup>
   <ItemGroup>
