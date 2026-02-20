@@ -28,11 +28,11 @@ A Comprehensive Solution, Ultimately Just Another Wheel.
 
 - Branch  **Abp**: Based on the Abp.vNext branch, DDD (Domain-Driven Design) simplifies the essence of development, providing support for multiple frontends from one backend.
 
-- Yi.Abp.Net8：Backend
-- Yi.Bbs.Vue3：Bbs Community - Frontend
-- Yi.Doc.Md: Open Source Documentation Tutorial
-- Yi.Pure.Vue3：Pure TS Backend Frontend
-- Yi.RuoYi.Vue3：RuoYi JS Backend Frontend
+- TTShang.Abp.Net8：Backend
+- TTShang.Bbs.Vue3：Bbs Community - Frontend
+- TTShang.Doc.Md: Open Source Documentation Tutorial
+- TTShang.Pure.Vue3：Pure TS Backend Frontend
+- TTShang.RuoTTShang.Vue3：RuoYi JS Backend Frontend
 
 ****
 ## 🍉 docker 
@@ -41,7 +41,7 @@ Full content：README-Docker.md
 
 backend：`docker run -d --name yi.admin -p 19001:19001 jiftcc/yi.admin:last`
 
-bbs frontend：`docker run -d --name yi.bbs -p 18001:18001 -v /home/Yi/Yi.Bbs.Vue3/yi-bbs.conf:/etc/nginx/conf.d/yi-bbs.conf jiftcc/yi.bbs:last`
+bbs frontend：`docker run -d --name yi.bbs -p 18001:18001 -v /home/Yi/TTShang.Bbs.Vue3/yi-bbs.conf:/etc/nginx/conf.d/yi-bbs.conf jiftcc/yi.bbs:last`
 
 > In addition, we provide Docker build operation, and we hope that you can build your own image through this method
 

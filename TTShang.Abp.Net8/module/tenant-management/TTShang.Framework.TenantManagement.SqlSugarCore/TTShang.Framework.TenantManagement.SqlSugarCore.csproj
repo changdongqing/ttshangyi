@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\common.props" />
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\TTShang.Framework.SqlSugarCore\TTShang.Framework.SqlSugarCore.csproj" />
+    <ProjectReference Include="..\TTShang.Framework.TenantManagement.Domain\TTShang.Framework.TenantManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

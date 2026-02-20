@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\TTShang.Framework.Ddd.Application.Contracts\TTShang.Framework.Ddd.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TTShang.Framework.Rbac.Domain.Shared\TTShang.Framework.Rbac.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

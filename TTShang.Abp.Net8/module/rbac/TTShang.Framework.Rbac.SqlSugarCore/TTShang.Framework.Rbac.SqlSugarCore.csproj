@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\TTShang.Framework.Mapster\TTShang.Framework.Mapster.csproj" />
+    <ProjectReference Include="..\..\..\framework\TTShang.Framework.SqlSugarCore\TTShang.Framework.SqlSugarCore.csproj" />
+    <ProjectReference Include="..\TTShang.Framework.Rbac.Domain\TTShang.Framework.Rbac.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -43,11 +43,11 @@ Yi框架-一套与SqlSugar一样爽的.Net8开源框架。
 - 分支**abp**: 基于Abp.vNext分支，完整分支，具备超多内置模块
 
 
-- Yi.Abp.Net8：后端
-- Yi.Doc.Md: 开源文档教程
-- Yi.Vben5.Vue3：Vben ts后台前端
-- Yi.Pure.Vue3：Pure ts后台前端
-- Yi.RuoYi.Vue3：RuoYi js后台前端
+- TTShang.Abp.Net8：后端
+- TTShang.Doc.Md: 开源文档教程
+- TTShang.Vben5.Vue3：Vben ts后台前端
+- TTShang.Pure.Vue3：Pure ts后台前端
+- TTShang.RuoTTShang.Vue3：RuoYi js后台前端
 
 
 ****
@@ -57,7 +57,7 @@ Yi框架-一套与SqlSugar一样爽的.Net8开源框架。
 
 后端：`docker run -d --name yi.admin -p 19001:19001 jiftcc/yi.admin:last`
 
-bbs前端：`docker run -d --name yi.bbs -p 18001:18001 -v /home/Yi/Yi.Bbs.Vue3/yi-bbs.conf:/etc/nginx/conf.d/yi-bbs.conf jiftcc/yi.bbs:last`
+bbs前端：`docker run -d --name yi.bbs -p 18001:18001 -v /home/Yi/TTShang.Bbs.Vue3/yi-bbs.conf:/etc/nginx/conf.d/yi-bbs.conf jiftcc/yi.bbs:last`
 
 > 另外我们提供docker的build操作，我们更希望你能通过此种方式二开构建属于自己的镜像，因为上面镜像更新不及时
 
@@ -291,7 +291,7 @@ QQ交流群：官方一群（已满）、官方二群（已满）、官方三群
 
 gitee仓库官方地址：https://gitee.com/ccnetcore/Yi 
 
-github仓库官方地址：https://github.com/ccnetcore/Yi.Abp.Admin
+github仓库官方地址：https://github.com/ccnetcore/TTShang.Abp.Admin
 
 前往官网查看留言区：
 
