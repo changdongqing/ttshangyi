@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using MyCSharp.HttpUserAgentParser.Providers;
 using Volo.Abp.AspNetCore.WebClientInfo;
 
 namespace TTShang.Framework.AspNetCore;
@@ -17,8 +18,9 @@ public class RealIpHttpContextWebClientInfoProvider : HttpContextWebClientInfoPr
     /// </summary>
     public RealIpHttpContextWebClientInfoProvider(
         ILogger<HttpContextWebClientInfoProvider> logger,
-        IHttpContextAccessor httpContextAccessor) 
-        : base(logger, httpContextAccessor)
+        IHttpContextAccessor httpContextAccessor,
+        IHttpUserAgentParserProvider httpUserAgentParser) 
+        : base(logger, httpContextAccessor, httpUserAgentParser)
     {
     }
 

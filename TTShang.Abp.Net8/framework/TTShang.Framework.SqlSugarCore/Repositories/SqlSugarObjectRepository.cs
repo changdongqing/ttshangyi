@@ -32,6 +32,10 @@ namespace TTShang.Framework.SqlSugarCore.Repositories
 
         public bool? IsChangeTrackingEnabled => throw new NotImplementedException();
 
+        public string? EntityName { get; set; }
+
+        public string? ProviderName { get; } = "SqlSugar";
+
         public Task DeleteAsync(Expression<Func<TEntity, bool>> predicate, bool autoSave = false, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
