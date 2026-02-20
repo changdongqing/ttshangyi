@@ -34,7 +34,7 @@ namespace TTShang.Framework.SqlSugarCore.Repositories
 
         public string? EntityName { get; set; }
 
-        public string? ProviderName => "SqlSugar";
+        public string? ProviderName { get; } = "SqlSugar";
 
         public Task DeleteAsync(Expression<Func<TEntity, bool>> predicate, bool autoSave = false, CancellationToken cancellationToken = default)
         {
