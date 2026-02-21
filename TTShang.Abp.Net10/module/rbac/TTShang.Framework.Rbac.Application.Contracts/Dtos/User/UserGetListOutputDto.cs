@@ -24,6 +24,6 @@ namespace TTShang.Framework.Rbac.Application.Contracts.Dtos.User
         public bool State { get; set; }
 
 
-        public string DeptName { get; set; }
+        public string? DeptName { get; set; }
     }
 }

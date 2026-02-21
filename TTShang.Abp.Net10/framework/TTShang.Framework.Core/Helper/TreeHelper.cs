@@ -31,7 +31,7 @@ namespace TTShang.Framework.Core.Helper
                 }
                 return result.OrderByDescending(m => (m as ITreeModel<T>)!.OrderNum).ToList();
             }
-            return null!;
+            return new List<T>();
         }
         private static void SetTreeChildren<T>(IList<T> list, IList<T> children, T model, Action<T> action = null!)
         {
