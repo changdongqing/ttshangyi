@@ -28,6 +28,7 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "@tinymce/tinymce-vue": "^6.0.1",
+    "@vben-core/icons": "workspace:*",
     "@vben/access": "workspace:*",
     "@vben/common-ui": "workspace:*",
     "@vben/constants": "workspace:*",
