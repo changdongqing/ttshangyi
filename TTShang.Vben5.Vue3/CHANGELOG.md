@@ -1,3 +1,14 @@
+# vben 5.6.0 升级
+
+**UPGRADE**
+
+- 将 vben 从 v5.5.7 升级到 v5.6.0
+- 将 Vite 从 v6.x 升级到 v7.x
+- 将 Radix Vue 迁移到 Reka UI（CSS变量从 `--radix-*` 更新为 `--reka-*`）
+- 更新 `@vitejs/plugin-vue` 到 v6.x，`@vitejs/plugin-vue-jsx` 到 v5.x
+- 更新 pnpm 到 v10.28.2，Node.js 要求升至 v22.22.0
+- 各依赖包版本更新至最新
+
 # 1.4.1
 
 **FEATURES**
