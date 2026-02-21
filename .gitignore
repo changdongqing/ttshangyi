@@ -158,6 +158,9 @@ PublishScripts/
 # 把 Yi.Vben5.Vue3 下的 packages 目录重新放出来
 !**/Yi.Vben5.Vue3/packages/
 !**/Yi.Vben5.Vue3/packages/**
+# 把 TTShang.Vben5.Vue3 下的 packages 目录重新放出来
+!**/TTShang.Vben5.Vue3/packages/
+!**/TTShang.Vben5.Vue3/packages/**
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -271,6 +274,8 @@ public
 dist
 # 把 Yi.Vben5.Vue3 下的 public 目录重新放出来
 !**/Yi.Vben5.Vue3/apps/web-antd/public/
+# 把 TTShang.Vben5.Vue3 下的 public 目录重新放出来
+!**/TTShang.Vben5.Vue3/apps/web-antd/public/
 .vscode
 /Yi.Abp.Net8/src/Yi.Abp.Web/appsettings.Development.json
 /Yi.Abp.Net8/src/Yi.Abp.Web/appsettings.Production.json
