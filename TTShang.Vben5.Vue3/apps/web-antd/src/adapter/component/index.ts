@@ -23,6 +23,7 @@ import { $t } from '@vben/locales';
 import { notification } from 'ant-design-vue';
 
 import { FileUploadOld, ImageUploadOld } from '#/components/upload-old';
+import InputCaptcha from './input-captcha.vue';
 
 const RichTextarea = defineAsyncComponent(() =>
   import('#/components/tinymce/index').then((res) => res.Tinymce),
@@ -149,6 +150,7 @@ export type ComponentType =
   | 'Input'
   | 'InputNumber'
   | 'InputPassword'
+  | 'VbenInputCaptcha'
   | 'Mentions'
   | 'PrimaryButton'
   | 'Radio'
@@ -216,6 +218,7 @@ async function initComponentAdapter() {
     Input: withDefaultPlaceholder(Input, 'input'),
     InputNumber: withDefaultPlaceholder(InputNumber, 'input'),
     InputPassword: withDefaultPlaceholder(InputPassword, 'input'),
+    VbenInputCaptcha: InputCaptcha,
     Mentions: withDefaultPlaceholder(Mentions, 'input'),
     // 自定义主要按钮
     PrimaryButton: (props, { attrs, slots }) => {
