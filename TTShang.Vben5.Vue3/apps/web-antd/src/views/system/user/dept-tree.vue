@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
 
-import type { DeptGetListOutputDto } from '#/api/system/user/model';
+import type { DeptTreeData } from '#/api/system/user/model';
 
 import { onMounted, ref } from 'vue';
 
@@ -36,7 +36,7 @@ const searchValue = defineModel('searchValue', {
 });
 
 /** 部门数据源 */
-const deptTreeArray = ref<DeptGetListOutputDto[]>([]);
+const deptTreeArray = ref<DeptTreeData[]>([]);
 /** 骨架屏加载 */
 const showTreeSkeleton = ref<boolean>(true);
 
@@ -45,9 +45,15 @@ async function loadTree() {
   searchValue.value = '';
   selectDeptId.value = [];
 
-  const ret = await getDeptTree();
-  deptTreeArray.value = ret;
-  showTreeSkeleton.value = false;
+  try {
+    const ret = await getDeptTree();
+    deptTreeArray.value = Array.isArray(ret) ? ret : [];
+  } catch (error) {
+    console.error('加载部门树失败:', error);
+    deptTreeArray.value = [];
+  } finally {
+    showTreeSkeleton.value = false;
+  }
 }
 
 async function handleReload() {
